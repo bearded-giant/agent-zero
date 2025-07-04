@@ -1,12 +1,11 @@
-
-# 🎯 Zero Target Generator CLI
+# Zero Target Generator CLI
 
 A CLI tool to generate printable zeroing targets for rifles and pistols using simplified ballistic calculations.
 Ideal for indoor or constrained-distance zeroing when trying to approximate a desired zero like 36, 50, or 100 yards.
 
 ---
 
-## ✅ Features
+## Features
 
 - Calculates point of impact (POI) offset based on barrel length, caliber, grain, and distance
 - Outputs PDF targets with:
@@ -18,20 +17,20 @@ Ideal for indoor or constrained-distance zeroing when trying to approximate a de
 
 ---
 
-## 📦 Supported Calibers & Default Grains
+## Supported Calibers & Default Grains
 
-| Caliber   | Default Grain |
-|-----------|----------------|
-| `5.56`    | 55gr           |
-| `9mm`     | 124gr          |
-| `10mm`    | 180gr          |
-| `45acp`   | 230gr          |
-| `308`     | 147gr          |
-| `300blk`  | 220gr (subsonic) |
+| Caliber  | Default Grain    |
+| -------- | ---------------- |
+| `5.56`   | 55gr             |
+| `9mm`    | 124gr            |
+| `10mm`   | 180gr            |
+| `45acp`  | 230gr            |
+| `308`    | 147gr            |
+| `300blk` | 220gr (subsonic) |
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ```bash
 python zero_target_cli_flex.py \
@@ -45,7 +44,7 @@ python zero_target_cli_flex.py \
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -53,12 +52,14 @@ pip install -r requirements.txt
 
 ---
 
-## 📫 Contributions & Feedback
+## Contributions & Feedback
 
 PRs and issues are welcome. Built for practical shooters who need fast and effective zeroing indoors or in the field.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool uses simplified ballistic drop calculations and should only be used for coarse zeroing. Always confirm live-fire zero at actual distances.
+
+....don't blame me.
