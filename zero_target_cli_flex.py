@@ -43,7 +43,7 @@ def get_velocity(caliber, barrel_length, grain):
     try:
         return VELOCITY_TABLE[caliber][grain][barrel_length]
     except KeyError:
-        raise ValueError(f"No velocity data for {caliber} {grain}gr with {barrel_length}" barrel.")
+        raise ValueError(f"No velocity data for {caliber} {grain}gr with {barrel_length} barrel.")
 
 def calc_drop_inches(zero_yd, true_yd, barrel_len, grain, caliber):
     velocity = get_velocity(caliber, barrel_len, grain)
@@ -104,7 +104,7 @@ def create_zeroing_target_auto(
     ax.text(center_x, poi_y - 0.3, f'Expected POI at {true_distance_yd} yd (~{poi_offset_inches}" low)',
             ha='center', color='red', fontsize=8)
 
-    note = f"Zero to {zero_distance_yd} yd • {barrel_length}" barrel • {grain}gr • {caliber.upper()}"
+    note = f"Zero to {zero_distance_yd} yd • {barrel_length}\" barrel • {grain}gr • {caliber.upper()}"
     ax.text(center_x, center_y + (page_size[1] * 0.38), note, ha='center', fontsize=10, style='italic')
 
     ax.set_xlim(0, page_size[0])
